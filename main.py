@@ -11,6 +11,15 @@ project_root = os.path.dirname(os.path.abspath(__file__))
 
 
 if __name__ == "__main__":
+
+
+    # 创建单层文件夹
+    folder_path = "./temp"
+    os.makedirs(folder_path, exist_ok=True)
+
+    # 创建多层文件夹
+    nested_path = "./temp/image"
+    os.makedirs(nested_path, exist_ok=True)
     # 使用您上传的Excel文件路径
     file_path = "考试信息填写.xlsx"
 
